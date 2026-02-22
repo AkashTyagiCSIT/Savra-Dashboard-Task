@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: savra-server
+    env: node
+    rootDir: server
+    buildCommand: npm install && node seed.js
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3001
